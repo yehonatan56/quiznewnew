@@ -1,0 +1,8 @@
+@media only screen and (max-width: 800px) and (min-width: 40px){
+.boxes{
+    display: block;
+}
+.boxes img{
+    width: 78%;
+}
+}

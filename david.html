@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>חידון האוצרות האבודים</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <!-- <img src="img/logo.png" alt="logo" width="30%" /> -->
+    <section class="logo">
+      <img src="img/logo.png" alt="logo" width="30%" class="img-logo">
+    </section>
+    <h1 class="title-header">חידון האוצרות האבודים</h1>
+  </header>
+  <div class="score">
+    <h1 id="score">0</h1>
+  </div>
+  <section class="section">
+    <!-- start quiz 1 -->
+    <article class="quiz" id="quiz-1">
+      <h2 class="quiz-question">למה ירדו שלושת גיבורי דוד לשדה פלישתים?</h2>
+      <div class="quiz-answer">
+        <button class="shadow david" onclick="answer(this   , 'yes' ,'david', 2)">להביא מים</button>
+        <button class="shadow david" onclick="answer(this   ,'no', 'david')">להילחם</button>
+        <button class="shadow david" onclick="answer(this   ,'no', 'david')">
+          סתם בשביל הכיף
+        </button>
+        <button class="shadow david" onclick="answer(this   ,'no', 'david')">לאכול</button>
+      </div>
+    </article>
+    <!-- // end q4uiz 1 -->
+  </section>
+  <section class="section">
+    <!-- start quiz 2 -->
+    <article class="quiz" id="quiz-2">
+      <h2 class="quiz-question">מי היתה צרויה?
+      </h2>
+      <div class="quiz-answer">
+        <button class="shadow david2" onclick="answer(this   ,'no', 'david2')">הבת של ישי</button>
+
+        <button class="shadow david2" onclick="answer(this  ,'no', 'david2')">אמא של יואב</button>
+        <button class="shadow david2" onclick="answer(this  ,'no', 'david2')">
+          אחות של דוד </button>
+        <button class="shadow q1a2 david2" onclick="answer(this, 'yes','david2'  , 3)">כל התשובות נכונות</button>
+      </div>
+
+    </article>
+    <!-- // end quiz 2 -->
+  </section>
+
+
+  <section class="section">
+    <!-- start quiz  3-->
+    <article class="quiz" id="quiz-3">
+      <h2 class="quiz-question">באיזה תאריך נפטר דוד המלך?</h2>
+      <div class="quiz-answer">
+        <button class="shadow david3" onclick="answer(this   ,'no', 'david3')">א' ניסן</button>
+        <button class="shadow q1a2 david3" onclick="answer(this   ,'yes', 'david3'  , 4)">ו' סיון</button>
+        <button class="shadow david3" onclick="answer(this   ,'no', 'david3')">
+          ט"ו באב
+        </button>
+
+        <button class="shadow" onclick="answer(this   ,'no')">א' תשרי</button>
+      </div>
+
+    </article>
+    <!-- // end quiz 3 -->
+  </section>
+
+  <section class="section">
+    <!-- start quiz  4-->
+    <article class="quiz" id="quiz-4">
+      <h2 class="quiz-question">באיזה גיל נמשח דוד למלך?</h2>
+      <div class="quiz-answer">
+        <button class="shadow david4" onclick="answer(this   ,'no', 'david4')">30</button>
+        <button class="shadow david4" onclick="answer(this   ,'no', 'david4')">
+          18
+        </button>
+        <button class="shadow q1a2 david4" onclick="answer(this   ,'yes', 'david4'  ,   5)">28</button>
+        <button class="shadow david4" onclick="answer(this   ,'no', 'david4')">42</button>
+      </div>
+
+    </article>
+    <!-- // end quiz 4 -->
+  </section>
+
+  
+  <section class="section">
+    <!-- start quiz  4-->
+    <article class="quiz" id="quiz-5">
+      <h2 class="quiz-question">באיזה גיל נמשח דוד למלך?</h2>
+      <div class="quiz-answer quiz-answer-organize">
+        <button class="shadow david5" onclick="answerorganize(this    , 3)">
+          18
+        </button>
+        <button class="shadow david5" onclick="answerorganize(this   , 4)">42</button>
+        <button class="shadow david5" onclick="answerorganize(this   , 2)">30</button>
+        <button class="shadow q1a2 david5" onclick="answerorganize(this   , 1)">28</button>
+        <div class="answer-organize-div">
+          <h1>סידרת </h1><h1 id="answer-organize" style="padding: 0 5px;"> 0 </h1><h1>תשובות מתוך 4</h1>
+        </div>
+      </div>
+      
+    </article>
+    <!-- // end quiz 4 -->
+  </section>
+  <!-- 
+        load js after render html, this is best practice
+        one of reasons is maybe you try do something but html element not load
+     -->
+  <script src="https://kit.fontawesome.com/a7d1491930.js" crossorigin="anonymous"></script>
+  <script src="js/quiz.js"></script>
+
+
+</html>

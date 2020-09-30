@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>חידון האוצרות האבודים</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <!-- <img src="img/logo.png" alt="logo" width="30%" /> -->
+    <section class="logo">
+      <img src="img/logo.png" alt="logo" width="30%" class="img-logo">
+    </section>
+    <h1 class="title-header">חידון האוצרות האבודים</h1>
+  </header>
+  <div class="score">
+    <h1 id="score">0</h1>
+  </div>
+
+  <section class="section">
+    <!-- start quiz 1 -->
+    <article class="quiz" id="quiz-1">
+      <h2 class="quiz-question">איך קראו יוכבד ועמרם לילדם השלישי?</h2>
+      <div class="quiz-answer">
+
+        <button class="shadow midbar" onclick="answer(this   ,'no', 'midbar')">ידידיה</button>
+        <button class="shadow midbar" onclick="answer(this   , 'yes' , 'midbar', 2)">טוביה</button>
+        <button class="shadow midbar" onclick="answer(this   ,'no', 'midbar')">
+          אהרון
+        </button>
+        <button class="shadow midbar" onclick="answer(this   ,'no', 'midbar')">משה</button>
+      </div>
+    </article>
+    <!-- // end q4uiz 1 -->
+  </section>
+  <section class="section">
+    <!-- start quiz 2 -->
+    <article class="quiz" id="quiz-2">
+      <h2 class="quiz-question">מה היה שמה של אשת אהרון הכהן?
+      </h2>
+      <div class="quiz-answer">
+        <button class="shadow midbar2" onclick="answer(this   ,'no', 'midbar2')">שולמית</button>
+        <button class="shadow q1a2 midbar2" onclick="answer(this, 'yes', 'midbar2'  , 3)">אלישבע</button>
+        <button class="shadow midbar2" onclick="answer(this  ,'no', 'midbar2')">מיכל</button>
+        <button class="shadow midbar2" onclick="answer(this  ,'no', 'midbar2')">
+          אליפה </button>
+
+      </div>
+
+    </article>
+    <!-- // end quiz 2 -->
+  </section>
+
+
+  <section class="section">
+    <!-- start quiz  3-->
+    <article class="quiz" id="quiz-3">
+      <h2 class="quiz-question">כמה שנים חי אהרון הכהן?</h2>
+      <div class="quiz-answer">
+        <button class="shadow midbar3" onclick="answer(this   ,'no', 'midbar3')">126</button>
+        <button class="shadow q1a2 midbar3" onclick="answer(this   ,'yes', 'midbar3'  , 4)">123</button>
+        <button class="shadow midbar3" onclick="answer(this   ,'no', 'midbar3')">
+          98
+        </button>
+
+        <button class="shadow midbar3" onclick="answer(this   ,'no', 'midbar3')">120</button>
+      </div>
+
+    </article>
+    <!-- // end quiz 3 -->
+  </section>
+
+  <section class="section">
+    <!-- start quiz  4-->
+    <article class="quiz" id="quiz-4">
+      <h2 class="quiz-question">למה משה היה מגמגם?</h2>
+      <div class="quiz-answer">
+
+        <button class="shadow midbar4" onclick="answer(this   ,'no', 'midbar4')">
+          היו לו בעיות שיניים
+        </button>
+        <button class="shadow q1a2 midbar4" onclick="answer(this   ,'yes', 'midbar4'  , 4)">הוא שם גחל בפה</button>
+        <button class="shadow midbar4" onclick="answer(this   ,'no', 'midbar4')">הוא נולד ככה</button>
+        <button class="shadow midbar4" onclick="answer(this   ,'no', 'midbar4')">אף תשובה אינה נכונה</button>
+      </div>
+
+    </article>
+    <!-- // end quiz 4 -->
+  </section>
+  <!-- 
+        load js after render html, this is best practice
+        one of reasons is maybe you try do something but html element not load
+     -->
+  <script src="https://kit.fontawesome.com/a7d1491930.js" crossorigin="anonymous"></script>
+  <script src="js/quiz.js"></script>
+
+
+</html>
